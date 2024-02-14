@@ -1,0 +1,5 @@
+1.What is Garbage Collector? How Garbage collector works in java? How can we call garbage collector ourself?
+
+->  Garbage Collector is the process by which the JVM automatically manages the memory used by the java programs.It involves identifying and reclaimaing the memory that is no longer reachable or used by the java programs,freeing up resources and preventing memory leaks.
+                  The Garbage Collector in Java uses a generational garbage collection strategy to manage memory which is based on the observation that most objects have short lifetimes. It divides the heap into the Young Generation and the Old Generation, focusing on reclaiming short-lived objects in the Young Generation and managing long-lived objects in the Old Generation.
+		   We can call garbage collector by using the 'System.gc()' command,although there is no guarentee that it will actually run. However there is other options also so that we can use like  getRuntime().gc() command, jmap command, jcmd command.
