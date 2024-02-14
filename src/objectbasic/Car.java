@@ -2,17 +2,19 @@ package objectbasic;
 
 public class Car {
     /* states(fields/Model) :
-    Brand(eg. Toyota,Honda)
-    Model
+    Brand (eg. Toyota,Honda,Tesla)
     Manufacture year
     Price
-    Has New/used
+    Has New Car
+    Has Used Car
     Color
-    Fuel uses
+    Fuel Type(Diesel,Petrol)
     Transmission type(e.g.Automatic,Manual,Hybrid)
-    Insurance
     Mileage
     Engine size
+    Has interior color
+    Has Exterior color
+    Number of seat
 
      */
 }

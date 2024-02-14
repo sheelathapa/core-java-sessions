@@ -12,15 +12,16 @@ public class Hospital {
     * Specializations(like cardiology,pediatrics,orthopedics)
     * Ownership types(like public,private,non-profit)
     * Has insurance accepted
-    * Patient Demographics (like age groups, socio-economic status)
+    * Patient Demographics (like age groups, socio-economic status,address,gender)
     * Medical Equipment
-    * Has Affiliated Universuties/Medical Schools
-    * Patient Satisfaction Ratings
+    * Has Affiliated Universities/Medical Schools
+    * Patient Satisfaction Ratings thing
     * Quality of Care Metrics(like patient outcomes,mortality rates, infection rates)
-    * No of Lab and pharmacy
+    * Lab and pharmacy
     * Hospital Branch/Location/phone number
     * Staff Training and Certification
     * Financial Information
-    * Department(like OPD,General)
+    * Department(like OPD Section,General Section)
+    * Counter(Bill pay)
     * */
 }
