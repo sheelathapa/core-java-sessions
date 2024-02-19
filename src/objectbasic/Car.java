@@ -3,18 +3,18 @@ package objectbasic;
 public class Car {
     /* states :
 
-    Brand
-    Model
-    Manufacture year
-    Price
-    Fuel Type
-    Transmission type
-    Fuel Efficiency
-    Engine size
-    Has interior color
-    Has Exterior color
-    Horsepower
-    Features
+    Brand - String
+    Model - String
+    Manufacture year - int
+    Price -double
+    Fuel Type - String
+    Transmission type - String
+    Fuel Efficiency - String
+    Engine Detail - String
+    Interior color - String
+    Exterior color - String
+    Horsepower - int
+    Features - String
 
      */
 }

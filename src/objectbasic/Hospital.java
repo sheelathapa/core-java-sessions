@@ -2,32 +2,32 @@ package objectbasic;
 
 public class Hospital {
     /*
-    * Hospital Name
-    * Email
+    * Hospital Name - String
+    * Email - String
     * Hospital website
-    * address
-    * Location
-    * Capacity
-    * Available beds
-    * Room
-    * Total Staffs
-    * Number of doctors
-    * Number of nurses
-    * Has emergency services
-    * Specializations
-    * Ownership types
-    * Has insurance accepted
-    * Patient Demographics
-    * Medical Equipment
-    * Has Affiliated Universities
-    * Has Medical Schools
-    * Patient Satisfaction Ratings thing
-    * Quality of Care Metrics
-    * Facilities
-    * Has Hospital Branch
-    * Staff Training and Certification
-    * Financial Information
-    * Department
-    * Billing Counter
+    * address - String
+    * Latitude -double
+    * Longitude -double
+    * Capacity - int
+    * Currently Available beds - int
+    * Number of Rooms - int
+    * Total Staffs - int
+    * Number of doctors - int
+    * Number of nurses - int
+    * Has emergency services - Boolean
+    * Specializations - String
+    * Ownership types - String
+    * Is insurance accepted - String
+    * Patient Demographics - String
+    * Medical Equipments - int
+    * Has Affiliated Universities - Boolean
+    * Has Medical Schools - Boolean
+    * Patient Satisfaction Rating - int
+    * Quality of Care Metrics - String
+    * Facilities - String
+    * Is Staff Training and Certification available - Boolean
+    * Financial Information - double
+    * Departments - String
+    * Number of Billing Counter - int
     * */
 }
