@@ -2,7 +2,7 @@ package himalayantimes;
 
 public class Category {
 /*
-        Category Id - int
+        CategoryId - int
         Category Name - String
         Is Disabled - boolean
         order - int
@@ -18,7 +18,33 @@ public class Category {
     private  boolean isDeleted;
     private String createdAt;
     private String updatedAt;
-    public int getCategoryId() {
+
+    public Category(int categoryId, String categoryName, boolean isDisabled, int order, boolean isDeleted, String createdAt, String updatedAt) {
+        this.categoryId = categoryId;
+        this.categoryName = categoryName;
+        this.isDisabled = isDisabled;
+        this.order = order;
+        this.isDeleted = isDeleted;
+        this.createdAt = createdAt;
+        this.updatedAt = updatedAt;
+    }
+
+
+
+    @Override
+    public String toString() {
+        return "Category{" +
+                "categoryId=" + categoryId +
+                ", categoryName='" + categoryName + '\'' +
+                ", isDisabled=" + isDisabled +
+                ", order=" + order +
+                ", isDeleted=" + isDeleted +
+                ", createdAt='" + createdAt + '\'' +
+                ", updatedAt='" + updatedAt + '\'' +
+                '}';
+    }
+
+   public int getCategoryId() {
         return categoryId;
     }
 
@@ -26,7 +52,8 @@ public class Category {
         this.categoryId = categoryId;
     }
 
-    public String getCategoryName() {
+    public String getCategoryName()
+    {
         return categoryName;
     }
 
@@ -75,29 +102,4 @@ public class Category {
     }
 
 
-
-    public Category(int categoryId, String categoryName, boolean isDisabled, int order, boolean isDeleted, String createdAt, String updatedAt) {
-        this.categoryId = categoryId;
-        this.categoryName = categoryName;
-        this.isDisabled = isDisabled;
-        this.order = order;
-        this.isDeleted = isDeleted;
-        this.createdAt = createdAt;
-        this.updatedAt = updatedAt;
-    }
-
-
-
-    @Override
-    public String toString() {
-        return "Category{" +
-                "categoryId=" + categoryId +
-                ", categoryName='" + categoryName + '\'' +
-                ", isDisabled=" + isDisabled +
-                ", order=" + order +
-                ", isDeleted=" + isDeleted +
-                ", createdAt='" + createdAt + '\'' +
-                ", updatedAt='" + updatedAt + '\'' +
-                '}';
-    }
 }

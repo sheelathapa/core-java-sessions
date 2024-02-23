@@ -1,0 +1,7 @@
+Different Types of classes :
+
+1. The class whose object cannot be created. Example : Math
+2. The class whose object can be created using new keyword. Example : Employee, Manager.
+3. The class whose object can be created in multiple ways using new keyword. Example : Date
+4. The class whose object can be created by calling a function. Example : LocalDate
+5. The class whose only single object can be created. Example : singleton pattern
