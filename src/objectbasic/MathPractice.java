@@ -38,28 +38,29 @@ public class MathPractice {
 
         System.out.println(  );
 
-
+        // Date Conversion :
         String time1 = "2024-02-28";
         String time2 = "02-28-2024";
         String time3 = "2024/02/28";
 
-        SimpleDateFormat inputFormat1 = new SimpleDateFormat("yyyy-MM-dd", Locale.ENGLISH);
-        SimpleDateFormat inputFormat2 = new SimpleDateFormat("MM-dd-yyyy", Locale.ENGLISH);
-        SimpleDateFormat inputFormat3 = new SimpleDateFormat("yyyy/MM/dd", Locale.ENGLISH);
-        SimpleDateFormat outputFormat = new SimpleDateFormat("EEE dd MMM", Locale.ENGLISH);
+        SimpleDateFormat time1Format = new SimpleDateFormat("yyyy-MM-dd", Locale.ENGLISH);
+        SimpleDateFormat time2Format = new SimpleDateFormat("MM-dd-yyyy", Locale.ENGLISH);
+        SimpleDateFormat time3Format = new SimpleDateFormat("yyyy/MM/dd", Locale.ENGLISH);
+        SimpleDateFormat outputResult = new SimpleDateFormat("EEE dd MMM", Locale.ENGLISH);
 
         try {
-            Date date1 = inputFormat1.parse(time1);
-            Date date2 = inputFormat2.parse(time2);
-            Date date3 = inputFormat3.parse(time3);
+            Date date1 = time1Format.parse(time1);
+            Date date2 = time2Format.parse(time2);
+            Date date3 = time3Format.parse(time3);
 
-            String formattedTime1 = outputFormat.format(date1);
-            String formattedTime2 = outputFormat.format(date2);
-            String formattedTime3 = outputFormat.format(date3);
+            String formattedTime1 = outputResult.format(date1);
+            String formattedTime2 = outputResult.format(date2);
+            String formattedTime3 = outputResult.format(date3);
 
             System.out.println("Formatted time for " + time1 + ": " + formattedTime1);
             System.out.println("Formatted time for " + time2 + ": " + formattedTime2);
             System.out.println("Formatted time for " + time3 + ": " + formattedTime3);
+
         } catch (ParseException e) {
             e.printStackTrace();
         }
