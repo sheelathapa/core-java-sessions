@@ -49,7 +49,7 @@ public class MathPractice {
         SimpleDateFormat outputResult = new SimpleDateFormat("EEE dd MMM", Locale.ENGLISH);
 
         try {
-            Date date1 = time1Format.parse(time1);
+            Date date1 = time1Format.parse(time1);  //parse will convert string datatype into another datatype
             Date date2 = time2Format.parse(time2);
             Date date3 = time3Format.parse(time3);
 
@@ -61,8 +61,10 @@ public class MathPractice {
             System.out.println("Formatted time for " + time2 + ": " + formattedTime2);
             System.out.println("Formatted time for " + time3 + ": " + formattedTime3);
 
-        } catch (ParseException e) {
-            e.printStackTrace();
+            //parse exception is a checked exception that signal unexpected error while parsing an i/p.
+        } catch (ParseException ex)  //this happens when input doesnot match with an expected format
+        {
+            ex.getMessage();
         }
 
         //Creating random value from 1 to 95.
