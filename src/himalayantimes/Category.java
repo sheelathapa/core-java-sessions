@@ -1,5 +1,7 @@
 package himalayantimes;
 
+import java.util.Objects;
+
 public class Category {
 /*
         CategoryId - int
@@ -29,6 +31,9 @@ public class Category {
         this.updatedAt = updatedAt;
     }
 
+    public Category() {
+
+    }
 
 
     @Override
@@ -48,7 +53,7 @@ public class Category {
         return categoryId;
     }
 
-    public void setCategoryId(int categoryId) {
+   public void setCategoryId(int categoryId) {
         this.categoryId = categoryId;
     }
 
@@ -86,7 +91,8 @@ public class Category {
     }
 
     public String getCreatedAt() {
-        return createdAt;
+
+        return Objects.requireNonNullElse(createdAt,"2024-01-29");
     }
 
     public void setCreatedAt(String createdAt) {
@@ -94,6 +100,7 @@ public class Category {
     }
 
     public String getUpdatedAt() {
+
         return updatedAt;
     }
 

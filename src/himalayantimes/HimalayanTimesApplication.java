@@ -1,5 +1,7 @@
 package himalayantimes;
 
+import java.time.LocalDate;
+
 public class HimalayanTimesApplication {
     public static void main(String[] args) {
         int id = 1;
@@ -28,6 +30,13 @@ public class HimalayanTimesApplication {
         System.out.println(sports);
         System.out.println(entertainment);
         System.out.println(more);
+
+        Category international = new Category();
+        LocalDate createdDate = LocalDate.parse(international.getCreatedAt());
+        LocalDate newCreatedDate = createdDate.plusDays(10);
+
+        System.out.println(newCreatedDate);
+
 
     }
 }

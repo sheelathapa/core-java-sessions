@@ -1,0 +1,14 @@
+Q. Why String is not preferred to store password ? What should we use instead ?
+
+String is not prefferred to store password because Strings are immutable ,if we store a password as plain text, it will be available in memory
+until garbage collector clears it and The moment we store the password and later on reset it that is not possible because string laterals once
+they are created in a string pool memory are going to stay there and we cannot change it even if we want to change it, a new string is going to get created instead so the old string with the
+password is still going to remain in the  memory unless it is garbage collected. therefore string are used in string pool for reusability.
+                 We should use char[] instead of string because Arrays are mutable so we can easily reset the values to zero and we use the two string method on that it is not going to print the
+  contents of the array but only the memory address.
+  eg:
+  String pwd = "password";
+  char[] charArrayPW = new char[]{'a','b','c','d'};
+
+  System.out.println(pwd);            o/p -> password
+  System.out.println(charArrayPW);     o/p -> [C@339

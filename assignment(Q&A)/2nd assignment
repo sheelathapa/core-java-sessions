@@ -1,0 +1,46 @@
+//Q. write down steps to create immutable class? What is the importance of immutable class?
+
+    Steps:                                          Reason:
+-> 1. Declare the class as final.  ->              To prevent it from being subclassed and modified.
+   2. Declare all fields as final and private. -> Declare all fields of the class as final To ensure that their values cannot be changed onced they are initialized also make them private to restrict direct access from outside the class.
+   3. Do not provide setter methods.->          -> Omit setter methods for the class fields to prevent modification of object's state after initialization.
+   4. Provide getter method.                    -> Only provide getter methods to access the values of the fields. These methods should return copies of the field values if they are mutable objects, or the original values if they are immutable.
+   5. Avoid returning mutable objects.          -> If your immutable class contains fields that reference mutable objects (e.g., collections), make sure to return defensive copies of these objects to prevent modification of the original data.
+   6. Ensure initialization of fields
+      in the constructor.                       -> Initialize all final fields of the class in the constructor to set their initial values. This initialization should be done either through constructor parameters or directly within the constructor body.
+   7. Implement proper equals() and hashCode()  ->  Override the equals() and hashCode() methods to ensure that objects of your immutable class can be compared and used effectively in collections.
+    methods.
+
+    Example :
+          public final class ImmutableClass {
+              private final int value;
+              private final String name;
+
+              public ImmutableClass(int value, String name) {
+                  this.value = value;
+                  this.name = name;
+              }
+
+              public int getValue() {
+                  return value;
+              }
+
+              public String getName() {
+                  return name;
+              }
+
+              @Override
+              public boolean equals(Object obj) {
+                  if (this == obj) return true;
+                  if (obj == null || getClass() != obj.getClass()) return false;
+                  ImmutableClass that = (ImmutableClass) obj;
+                  return value == that.value && Objects.equals(name, that.name);
+              }
+
+              @Override
+              public int hashCode() {
+                  return Objects.hash(value, name);
+              }
+          }
+
+            Immutable class in java is important for thread safety , simplified debugging and testing.
